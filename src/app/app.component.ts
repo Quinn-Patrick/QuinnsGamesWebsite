@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'quinns-games-angular';
+  ngAfterViewInit(): void {
+      // @ts-ignore
+      twttr.widgets.load();
+  }
 }
+
+
