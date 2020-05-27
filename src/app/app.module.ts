@@ -9,6 +9,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { NephilaComponent } from './nephila/nephila.component';
 import { ChryseComponent } from './chryse/chryse.component';
 import { SurvivalBallComponent } from './survival-ball/survival-ball.component';
+import { HttpClientModule }    from '@angular/common/http';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { SurvivalBallComponent } from './survival-ball/survival-ball.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

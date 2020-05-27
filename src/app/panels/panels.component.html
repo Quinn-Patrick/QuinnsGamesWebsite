@@ -1,42 +1,13 @@
 <p style="color: white">This is the home of Quinn Patrick's indie games. Play them and have a good time. If you want to discuss these games, join the <a href = "https://discord.gg/MXpy8Zt" style="color: lime">official discord server.</a> I check it regularly, so there's a good chance I'll see your discussion!</p>
-<a routerLink="superSurvivalBall" class="panel-link">
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <div class = "row">
-                <div class="col-sm-3"><img src = "../assets/titleScreenshot.PNG" class = "img-thumbnail" alt = "Super Survival Ball Thumbnail" style="width:200px" style="height:150px"></div>
-                <div class="col-sm-9"><h2><i>Super Survival Ball</i></h2>
-                <p>Originally created in 48 hours! Bounce Balls off a paddle in outer space! The true ultimate ball game!!</p></div>
-                
-                </div>
-            </div>
-    </div>
-</a>
-<a routerLink="nephila">
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <div class = "row">
-                <div class="col-sm-3"><img src = "../assets/nephilaCapture.PNG" class = "img-thumbnail" alt = "Super Survival Ball Thumbnail" style="width:200px" style="height:150px"></div>
-                <div class="col-sm-9"><h2><i>Nephila</i></h2>
-                <p>For as long as memory serves, a tower reaching all the way to heaven has served as the center of human civilization, its upper floors shrouded in mystery. But recently, legions of monsters have been unleashed upon the world, sent by Aeus, the lord of Pandemonium. Now you must arm yourself, and find a way to reach him.
 
-                    Explore the world, battle monsters, find upgrades, and learn the ancient secrets.</p></div>
-                
-                </div>
-            </div>
-    </div>
-</a>
-<a routerLink="chryse">
+<a *ngFor="let game of games" routerLink={{game.linkUrl}} class="panel-link">
     <div class="panel panel-default">
         <div class="panel-body">
-            <div class = "row">
-                <div class="col-sm-3"><img src = "../assets/chryseCapture.PNG" class = "img-thumbnail" alt = "Super Survival Ball Thumbnail" style="width:200px" style="height:150px"></div>
-                <div class="col-sm-9"><h2><i>Chryse<small>  now in development</small></i></h2>
-                <p>When a force of darkness threatens the land, four youths are swept into the fight of their lives.
-                    But they have a long way to go before they're strong enough to win!
-                    Battle monsters, collect treasure, and gain powerful fighting techniques in this epic fantasy role-playing experience!
-                </p></div>
-                
-                </div>
+            <div class="row">
+                <div class="col-sm-3"><img src ={{game.imageUrl}} class = "img-thumbnail" alt = {{game.title}} style="width:200px" style="height:150px"></div>
+                <div class="col-sm-9"><h2><i>{{game.title}}<small>{{game.subtitle}}</small></i></h2>
+                <p>{{game.description}}</p></div>
             </div>
+        </div>
     </div>
 </a>
