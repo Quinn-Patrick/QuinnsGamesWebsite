@@ -10,6 +10,7 @@ import { NephilaComponent } from './nephila/nephila.component';
 import { ChryseComponent } from './chryse/chryse.component';
 import { SurvivalBallComponent } from './survival-ball/survival-ball.component';
 import { HttpClientModule }    from '@angular/common/http';
+import { EclipticComponent } from './ecliptic/ecliptic.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HttpClientModule }    from '@angular/common/http';
     AboutMeComponent,
     NephilaComponent,
     ChryseComponent,
-    SurvivalBallComponent
+    SurvivalBallComponent,
+    EclipticComponent
   ],
   imports: [
     BrowserModule,

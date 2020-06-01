@@ -11,16 +11,25 @@ export class GameService {
 
   constructor(private http: HttpClient) { }
 
-  games: Game[] = [{
+  games: Game[] = [
+  {
     id: 0,
+    title: "ecliptic",
+    subtitle: " Play in the browser!",
+    imageUrl: "../assets/eclipticCapture.png",
+    linkUrl: "ecliptic",
+    description: "Put on your thinking cap and master orbital dynamics in this physics puzzler. Completing all six levels will take some serious skill!"
+  },
+  {
+    id: 1,
     title: "Super Survival Ball",
-    subtitle: "",
+    subtitle: " Play in the browser!",
     imageUrl: "../assets/titleScreenshot.PNG",
     linkUrl: "superSurvivalBall",
     description: "Originally created in 48 hours! Bounce Balls off a paddle in outer space! The true ultimate ball game!!"
   },
   {
-    id: 1,
+    id: 2,
     title: "Nephila",
     subtitle: "",
     imageUrl: "../assets/nephilaCapture.PNG",
@@ -28,7 +37,7 @@ export class GameService {
     description: "For as long as memory serves, a tower reaching all the way to heaven has served as the center of human civilization, its upper floors shrouded in mystery. But recently, legions of monsters have been unleashed upon the world, sent by Aeus, the lord of Pandemonium. Now you must arm yourself, and find a way to reach him. Explore the world, battle monsters, find upgrades, and learn the ancient secrets."
   },
   {
-    id: 2,
+    id: 3,
     title: "Chryse",
     subtitle: "  Now in development",
     imageUrl: "../assets/chryseCapture.PNG",
