@@ -13,6 +13,38 @@ export class GameService {
 
   games: Game[] = [
   {
+    id: 7,
+    title: "ecliptic 2",
+    subtitle: " Play in the browser!",
+    imageUrl: "../assets/ecliptic2logo.png",
+    linkUrl: "ecliptic2",
+    description: `Complete six more levels in the advanced sequel to the original orbital mechanical game.`
+  },
+  {
+    id: 8,
+    title: "Timeflight Alpha",
+    subtitle: " Play in the browser!",
+    imageUrl: "../assets/timeflightCover.png",
+    linkUrl: "timeflight",
+    description: `Created in 48 hours! Rack up big points before time runs out!`
+  },
+  {
+    id: 6,
+    title: "Vespadian",
+    subtitle: "",
+    imageUrl: "../assets/vespadianCover.png",
+    linkUrl: "vespadian",
+    description: `So, you think adventuring is the life for you? Build the fantasy role-playing party of your dreams, and embark on grand adventures. On your way, you will be faced with the machinations of the dread sorcerer Ephemeris, but what could be his real plan?`
+  },
+  {
+    id: 4,
+    title: "Looping Condor 3000",
+    subtitle: "  Play in the browser!",
+    imageUrl: "../assets/loopingCondorCapture.png",
+    linkUrl: "loopingCondor",
+    description: `Created in 48 hours! Loop your way through six challenging levels using only the arrow keys!`
+  },
+  {
     id: 0,
     title: "ecliptic",
     subtitle: " Play in the browser!",
@@ -39,13 +71,24 @@ export class GameService {
   {
     id: 3,
     title: "Chryse",
-    subtitle: "  Now in development",
+    subtitle: "",
     imageUrl: "../assets/chryseCapture.PNG",
     linkUrl: "chryse",
     description: `When a force of darkness threatens the land, four youths are swept into the fight of their lives.
     But they have a long way to go before they're strong enough to win!
     Battle monsters, collect treasure, and gain powerful fighting techniques in this epic fantasy role-playing experience!`
   },
+  {
+    id: 5,
+    title: "Brubnar the Barbarian in the Deepest Dungeon",
+    subtitle: "  Play in the browser!",
+    imageUrl: "../assets/brubnarCapture.png",
+    linkUrl: "brubnar",
+    description: `Created in 48 hours! Play through endless floors of escalating challenge as Brubnar the Barbarian! Get deep with the mystical Wordes of Wisdome! Rack up gold and spend it on powerful upgrades and magic spells!`
+  }
+  
+  
+  
   ]
 
   getGames(): Observable<Game[]> {
